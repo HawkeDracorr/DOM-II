@@ -31,9 +31,29 @@ bodyContent[1].addEventListener('mouseover', highlight)
 bodyContent[1].addEventListener('mouseout', revert)
 
 function highlight() {
-  this.style.background = "red"
+  this.style.background = "cadetblue"
+  this.style.borderRadius = '5px'
+  this.style.padding = '15px'
   // alert ('test')
 }
 function revert() {
   this.style.background = "transparent"
+  this.style.padding = '0'
+}
+
+// Event 4: Double clicked
+let headerImg = document.querySelector('#header-img');
+headerImg.addEventListener('dblclick', do_a_flip)
+
+let isFlipped = false;
+
+function do_a_flip() {
+
+  if (isFlipped === false) {
+    this.style.transform = 'rotate(180deg)'
+    isFlipped = true;
+  } else {
+    this.style.transform = 'rotate(0deg)'
+    isFlipped = false;
+  }
 }
