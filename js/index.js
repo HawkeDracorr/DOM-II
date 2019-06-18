@@ -57,3 +57,11 @@ function do_a_flip() {
     isFlipped = false;
   }
 }
+
+// Event 5: oncopy
+let copyright = document.querySelector('html')
+copyright.addEventListener('copy', redHanded)
+
+function redHanded() {
+  alert ('THEEF!!1!')
+}
