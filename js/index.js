@@ -65,3 +65,33 @@ copyright.addEventListener('copy', redHanded)
 function redHanded() {
   alert ('THEEF!!1!')
 }
+
+// Event 6: scroll
+
+let printin = document.querySelector('html')
+printin.addEventListener('keydown', keyJokes)
+
+function keyJokes(e) {
+  if(e.key === 'f'){
+    alert ('Can I get an F in chat?')
+  }
+  if(e.key === 'Escape'){
+    alert ('There is no escaping...')
+  }
+  if(e.key === 'Backspace') {
+    alert (`Are you trying to delete the site?`)
+  }
+  if(e.key === ' ') {
+    alert (`Yeah, I think we need some too...`)
+  }
+  if(e.key === 'Control') {
+    alert (`You're outta that.`)
+  }
+  if(e.key === 'Home') {
+    alert (`There's no place like it.`)
+  }
+  if(e.key === 'Insert') {
+    alert (`( ͡° ͜ʖ ͡°)`)
+  }
+  console.log(e);
+}
